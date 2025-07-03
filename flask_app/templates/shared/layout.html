@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Boy</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    {% block extracss %}
+    {% endblock %}
+</head>
+<body>
+    <img src="{{ url_for('static', filename='images/TacoBoyLogo.png') }}" alt="Taco Boy Logo" class="logo">
+    <header>
+        <div class="container">
+            
+            <h1>Taco Boy Grand Rapids</h1>
+            <p>3475 Plainfield Ave NE, Grand Rapids, MI 49525
+            <br>(616) 383-7111
+            </p>
+        </div>
+    </header>
+    <nav class="navbar">
+        <u1 class="nav-links">
+            <a href="{{ url_for('home_page') }}">Home</a>
+            <a href="{{ url_for('about_page') }}">About</a>
+            <a href="{{ url_for('menu_page') }}">Menu</a>
+            <a href="{{ url_for('apply_page') }}">Apply</a>
+        </u1>
+    </nav>
+    {% block maincontent %}
+    {% endblock %}
+</body>
+
+<footer>
+    <p>&copy; 2024 Taco Boy. All rights reserved.</p>
+</footer>
+</html>

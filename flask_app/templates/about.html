@@ -1,0 +1,21 @@
+{% extends 'shared/layout.html' %}
+
+{% block title %}
+<title>About Us</title>
+{% endblock %}
+
+{% block extracss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')}}">
+{% endblock %}
+
+{% block maincontent %}
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Us</h2>
+        <p>
+            3475 Plainfield Ave NE, Grand Rapids, MI 49525
+            (616) 383-7111
+        </p>
+    </div>
+</section>
+{% endblock %}

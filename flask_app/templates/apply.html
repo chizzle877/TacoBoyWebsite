@@ -1,0 +1,33 @@
+{% extends 'shared/layout.html' %}
+
+{% block title %}
+<title>Apply Now</title>
+{% endblock %}
+
+{% block extracss %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/apply.css')}}">
+{% endblock %}
+
+{% block maincontent %}
+<section id="jobs" class="jobs">
+    <div class="container">
+        <h2>Join Our Team</h2>
+        <p>Want to join the Taco Boy team? Fill out your information below!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="number">Phone Number:</label>
+            <input type="text" id="number" name="number" required>
+            
+            <label for="resume">(Not Required) Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf">
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</section>
+{% endblock %}

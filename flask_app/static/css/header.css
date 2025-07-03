@@ -1,0 +1,29 @@
+header {
+    background: #ffcc00;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.5rem;
+}
+
+.logo {
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    width: 10rem;
+    height: auto;
+    z-index: 1000;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    background: #fffbe6;
+    padding: 8px;
+}
