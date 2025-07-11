@@ -1,0 +1,9 @@
+.menu-category {
+    max-width: 700px;
+    width: 90%;
+    margin: 24px auto;
+    padding: 20px;
+    background: #fffbe6;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}

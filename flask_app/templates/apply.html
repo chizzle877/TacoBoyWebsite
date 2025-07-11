@@ -13,8 +13,8 @@
     <div class="container">
         <h2>Join Our Team</h2>
         <p>Want to join the Taco Boy team? Fill out your information below!</p>
-        <form>
-            <label for="name">Name:</label>
+        <form action="{{ url_for('apply_page') }}" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
             <input type="text" id="name" name="name" required>
             
             <label for="email">Email:</label>
@@ -22,6 +22,14 @@
 
             <label for="number">Phone Number:</label>
             <input type="text" id="number" name="number" required>
+
+            <label for="number">Have you ever been convicted of a misdemeanor or felony crime?</label>
+            <div class="radio-group">
+                <input type="radio" id="crime_yes" name="criminal_history" value="Yes" required> <label for="crime_yes">Yes</label>
+                <input type="radio" id="crime_no" name="criminal_history" value="No" required> <label for="crime_no">No</label>
+            </div>
+            <label for="explain_crime">If yes, please explain:</label>
+            <input type="text" id="explain_crime" name="explain_crime">
             
             <label for="resume">(Not Required) Upload Resume:</label>
             <input type="file" id="resume" name="resume" accept=".pdf">

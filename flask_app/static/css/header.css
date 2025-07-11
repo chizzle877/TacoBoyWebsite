@@ -27,3 +27,23 @@ header p {
     background: #fffbe6;
     padding: 8px;
 }
+
+@media (max-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        max-width: 98vw;
+        padding: 10px;
+        text-align: left;
+    }
+    .logo {
+        position: static;
+        width: 4rem;
+        margin: 0 1rem 0 0;
+        flex-shrink: 0;
+    }
+    .header-content {
+        display: block;
+    }
+}
