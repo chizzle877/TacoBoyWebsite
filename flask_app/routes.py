@@ -18,6 +18,14 @@ def home_page():
 def about_page():
     return render_template('about.html')
 
+@app.route('/hotsauce')
+def hotsauce_page():
+    return render_template('hotsauce.html')
+
+@app.route('/onlineorder')
+def onlineorder_page():
+    return render_template('OnlineOrdering.html')
+
 @app.route('/apply', methods=['GET', 'POST'])
 def apply_page():
     if request.method == 'POST':
@@ -29,7 +37,7 @@ def apply_page():
         explain_crime = request.form.get('explain_crime')
         # Compose email body
         body = f"""New application received:\n\nName: {name}\nEmail: {email}\nPhone: 
-                {number} \nCriminal History: {criminal_history}\n Explanation: {explain_crime}\n\n"""
+                {number} \n"""
 
         msg = Message(
             subject="New Taco Boy Job Application",
