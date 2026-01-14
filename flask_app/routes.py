@@ -33,8 +33,6 @@ def apply_page():
         email = request.form.get('email')
         number = request.form.get('number')
         resume = request.files.get('resume')
-        criminal_history = request.form.get('criminal_history')
-        explain_crime = request.form.get('explain_crime')
         # Compose email body
         body = f"""New application received:\n\nName: {name}\nEmail: {email}\nPhone: 
                 {number} \n"""
