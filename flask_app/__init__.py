@@ -22,9 +22,6 @@ def create_app(debug=False):
 	UPLOAD_FOLDER = os.path.join(os.path.dirname(__file__), 'static', 'uploads')
 	os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 	app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-	##from .utils.database import database
-	##db = database()
-	##db.createTables(purge=False)
 
 
 
