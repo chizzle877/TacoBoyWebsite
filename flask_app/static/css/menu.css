@@ -28,3 +28,29 @@
     background-color: #ffa500;
     color: #fff;
 }
+
+/* Menu */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 28px;
+}
+
+.menu-category {
+    border: none;
+    border-radius: 14px;
+    padding: 22px 18px;
+    width: 280px;
+    min-width: 200px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(255,204,0,0.13);
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-size: 1.08em;
+}
+
+.menu-category:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(255,204,0,0.22);
+    background: #fffde7;
+}

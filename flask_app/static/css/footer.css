@@ -4,5 +4,6 @@ footer {
     color: #fff;
     padding: 10px 0;
     text-align: center;
-    margin-top: auto;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%; /* Ensure it spans the full width */
 }
