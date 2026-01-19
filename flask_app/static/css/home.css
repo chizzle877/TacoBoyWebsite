@@ -1,5 +1,5 @@
 /* Center the image and make it responsive */
-.HotSauceSlide {
+.WelcomeSlide {
     display: block;
     margin: 0 auto; /* Centers the image horizontally */
     max-width: 100%; /* Ensures the image fits within the screen */
